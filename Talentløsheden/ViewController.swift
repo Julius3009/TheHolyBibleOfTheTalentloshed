@@ -50,6 +50,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         locateDisciple()
     }
     
+    print("hi")
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
