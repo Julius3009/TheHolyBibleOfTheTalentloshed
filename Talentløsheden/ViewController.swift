@@ -48,9 +48,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     // The main knap
     @IBAction func submit(_ sender: Any) {
         locateDisciple()
+        
+        print("hi")
     }
     
-    print("hi")
+
 
     
     override func viewDidLoad() {
