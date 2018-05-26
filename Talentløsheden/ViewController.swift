@@ -49,6 +49,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func submit(_ sender: Any) {
         locateDisciple()
         print("hi")
+        print("Please  virk")
     }
     
 
