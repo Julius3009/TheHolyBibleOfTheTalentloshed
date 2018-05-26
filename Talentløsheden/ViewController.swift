@@ -9,9 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
-    
-    var storyIndex : Int = 1
-    
+        
     var trosbekendelsen : String = "Talentløse guder, i som skaber soundboksen! Helliget vorde jeres navn, Komme jeres riger. Ske jeres vilje, som i hallen således også til konkurrence; Giv os i dag vor daglige dose talentløshed, og forbliv talentløse, som også vi forbliver talentløse, og led os ikke hen til fisken, men fri os fra det onde. For dit er riget og magten og talentløsheden i evighed!"
         
     
