@@ -48,8 +48,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     // The main knap
     @IBAction func submit(_ sender: Any) {
         locateDisciple()
-        
-        print("hello")
     }
     
 
@@ -92,12 +90,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 profilePic.isHidden = false
                     backGroundStory.isHidden = false
                     profilePic.image = #imageLiteral(resourceName: "Malthe")
-                backGroundStory.text = "Got-movez' baggrundshistorie."
+                backGroundStory.text = "Got-movez's baggrundshistorie."
+            startupTextView.isHidden = true
+        } else if exploreTextField.text == "Laurits" || exploreTextField.text == "Fireball" {
+                profilePic.isHidden = false
+                    backGroundStory.isHidden = false
+                    profilePic.image = #imageLiteral(resourceName: "Laurits")
+                backGroundStory.text = "Fireballs baggrundshistorie"
             startupTextView.isHidden = true
         }
         else {
             startupTextView.text = "Der er ikke en discipel med det navn ... Har du prøvet med stort startbogstav?"
-            
+                profilePic.isHidden = true
+                backGroundStory.isHidden = true
+            startupTextView.isHidden = false
         }
     }
     
