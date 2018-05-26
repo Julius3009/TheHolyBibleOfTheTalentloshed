@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6D8400620B9A4BE00ACF030 /* Disciplernes baggrundshistorier .swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D8400520B9A4BE00ACF030 /* Disciplernes baggrundshistorier .swift */; };
 		E094505B20B5552500B0617E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094505A20B5552500B0617E /* AppDelegate.swift */; };
 		E094505D20B5552500B0617E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094505C20B5552500B0617E /* ViewController.swift */; };
 		E094506020B5552500B0617E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E094505E20B5552500B0617E /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C6D8400520B9A4BE00ACF030 /* Disciplernes baggrundshistorier .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Disciplernes baggrundshistorier .swift"; sourceTree = "<group>"; };
 		E094505720B5552500B0617E /* Talentløsheden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Talentløsheden.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E094505A20B5552500B0617E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E094505C20B5552500B0617E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				E094505A20B5552500B0617E /* AppDelegate.swift */,
 				E094505C20B5552500B0617E /* ViewController.swift */,
+				C6D8400520B9A4BE00ACF030 /* Disciplernes baggrundshistorier .swift */,
 				E094505E20B5552500B0617E /* Main.storyboard */,
 				E094506120B5552700B0617E /* Assets.xcassets */,
 				E094506320B5552700B0617E /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6D8400620B9A4BE00ACF030 /* Disciplernes baggrundshistorier .swift in Sources */,
 				E094505D20B5552500B0617E /* ViewController.swift in Sources */,
 				E094505B20B5552500B0617E /* AppDelegate.swift in Sources */,
 			);
