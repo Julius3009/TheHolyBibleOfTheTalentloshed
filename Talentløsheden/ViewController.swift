@@ -95,7 +95,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             startupTextView.isHidden = true
         }
         else {
-            startupTextView.text = "Der er ikke en discipel med det navn ... Har du prøvet med stort startbogstav?"
+            startupTextView.text = "Der blev ikke fundet nogle disciple med det navn..."
                 profilePic.isHidden = true
                 backGroundStory.isHidden = true
             startupTextView.isHidden = false
