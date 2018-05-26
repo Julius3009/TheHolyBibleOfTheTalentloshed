@@ -19,7 +19,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     var larrysStory : String = "Boi havde ofret sine pengesedler til den talentløse gud for at skabe profeten “Soundboks.” men han startede ikke talentløsheden. Den lå i hans gener. Hans forældre ofrede deres liv for opdrage de talentløse børn. Den talentløse lækre søster og Boi. Boi skabte sit navn idet han sagde til de andre talentløse: “boi” der vidste de at han var en boi. Boi er også kendt for sine mange quotes han har skabt: how many H2O’s u got? Jeg har den ikke din faggot! Shut all yo bitches asses up og ikke mindst fuck mig i røven!!. Det der gør Boi så speciel er, at når han løber de 23,5 meter der er hen til trampolinen bliver han en filosof på højde med sokrates og alle de andre hunde. Han kommer i zen med krop og sjæl, og så kommer der nye quotes. De her quotes kommer til Boi som åbenbaringer sendt fra det guddommelige. Heriblandt har han sagt: “Til Narnia!”, “Fuck biscuit!”. "
 
+    var malthesStory : String = "Den talentløse gud havde skabt en masse gode kreationer i hans tro. Alle de talentløse disciple havde intet talent. Men en dag i hans kreation kom der en smutter, for en af de talentløses hjerner havde kapaciteten til at lære en enkelt ting i livet, som ikke blev udført talentløst. Så talentløs got movez var uvidende om sin talentløshed til at starte med. Så i hans forsøg for at skabe sit ene talent, fandt han Roy Purdy, han blev inspireret til at danse, og hans knæ blev talentfulde og fik fuld mobilitet, til at gøre hvad de har lyst til. Han havde perfektioneret sit ene talent. Efter han følte sig talentfuld, gik hans liv ned ad bakke, og han fandt ud af sin talentløshed. Den talentløse gruppe så hans potentiale og gjorde en undtagelse i hans talent. Det er jo også underholdende."
     
+    var lauritsStory : String = "Talentløs Fireball, havde en fejl da han blev født. Der var sket en fejl i hans talentløse gener. Den talentløse gud prøvede at fikse denne fejl ved at ændre på generne, men det gik helt galt. Hans gener blev fuldstændig maltrakteret, og det endte ud i en permanent ulykke. Der gik ild i hans hår, og alle prøvede at slukke ilden, men de indså hurtigt at det var permanent. Han havde også et andet talentløst talent, han var nemlig også en tøffelhelt. Talentløs fireball er udstyret med en sublim smag for sokker, de kommer i alle power rangernes farver. Ikke kun det at de står for en fjerdedel af Fireballs identitet, så er sokkerne Fireballs mest trofaste våben i krigen mod Talentløs Boi og tal og talentløs lille dreng (ikke mindst lille drengs kugler). Med sokker og tøfler på er Fireball ustoppelig, og mange bøjer sig i støvet for hans krigeriske storhed"
+    
+  
+
     
     
     
@@ -94,13 +99,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 profilePic.isHidden = false
                     backGroundStory.isHidden = false
                     profilePic.image = #imageLiteral(resourceName: "Malthe")
-                backGroundStory.text = "Got-movez's baggrundshistorie."
+                backGroundStory.text = malthesStory
             startupTextView.isHidden = true
         } else if exploreTextField.text == "Laurits" || exploreTextField.text == "Fireball" {
                 profilePic.isHidden = false
                     backGroundStory.isHidden = false
                     profilePic.image = #imageLiteral(resourceName: "Laurits")
-                backGroundStory.text = "Fireballs baggrundshistorie"
+                backGroundStory.text = lauritsStory
             startupTextView.isHidden = true
         }
         else {
