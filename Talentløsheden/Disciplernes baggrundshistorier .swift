@@ -16,3 +16,7 @@ var larrysStory : String = "Boi havde ofret sine pengesedler til den talentløse
 
 var malthesStory : String = "Den talentløse gud havde skabt en masse gode kreationer i hans tro. Alle de talentløse disciple havde intet talent. Men en dag i hans kreation kom der en smutter, for en af de talentløses hjerner havde kapaciteten til at lære en enkelt ting i livet, som ikke blev udført talentløst. Så talentløs got movez var uvidende om sin talentløshed til at starte med. Så i hans forsøg for at skabe sit ene talent, fandt han Roy Purdy, han blev inspireret til at danse, og hans knæ blev talentfulde og fik fuld mobilitet, til at gøre hvad de har lyst til. Han havde perfektioneret sit ene talent. Efter han følte sig talentfuld, gik hans liv ned ad bakke, og han fandt ud af sin talentløshed. Den talentløse gruppe så hans potentiale og gjorde en undtagelse i hans talent. Det er jo også underholdende."
     
+var villadsStory : String = "Allerede i starten af de talentløses sæson, fik djævelen en af de talentløse på krogen. Djævelen som også er kendt som: Fisken, havde disciplen på krogen i omtrent en måned og der skete ting som er langt over manges grænser. Djævelen fik fat om talentløs forræder lige inden han fik åbenbaringen. Den talentløse skred fra djævelen, og de andre talentløse tog ham tilbage i gruppen. Det var der han fik sit navn: Talentløs forræder. "
+
+
+

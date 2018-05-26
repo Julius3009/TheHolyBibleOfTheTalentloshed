@@ -76,25 +76,32 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 backGroundStory.text = holgersStory
             startupTextView.isHidden = true
         } else if exploreTextField.text == "Larry" || exploreTextField.text == "Boi" || exploreTextField.text == "larry"{
-                profilePic.isHidden = false
-                    backGroundStory.isHidden = false
+            profilePic.isHidden = false
+                backGroundStory.isHidden = false
                     profilePic.image = #imageLiteral(resourceName: "Larry")
                 backGroundStory.text = larrysStory
             startupTextView.isHidden = true
         } else if exploreTextField.text == "Malthe" || exploreTextField.text == "Got-movez" || exploreTextField.text == "malthe" {
-                profilePic.isHidden = false
-                    backGroundStory.isHidden = false
+            profilePic.isHidden = false
+                backGroundStory.isHidden = false
                     profilePic.image = #imageLiteral(resourceName: "Malthe")
                 backGroundStory.text = malthesStory
             startupTextView.isHidden = true
         } else if exploreTextField.text == "Laurits" || exploreTextField.text == "Fireball" || exploreTextField.text == "laurits" {
-                profilePic.isHidden = false
-                    backGroundStory.isHidden = false
+            profilePic.isHidden = false
+                backGroundStory.isHidden = false
                     profilePic.image = #imageLiteral(resourceName: "Laurits")
                 backGroundStory.text = lauritsStory
             startupTextView.isHidden = true
         }
-        else {
+        else if exploreTextField.text == "Villads" || exploreTextField.text == "forræder" || exploreTextField.text == "villads" {
+            profilePic.isHidden = false
+                backGroundStory.isHidden = false
+                    profilePic.image = #imageLiteral(resourceName: "Villads")
+                backGroundStory.text = villadsStory
+            startupTextView.isHidden = true
+        }
+            else {
             startupTextView.text = "Der er ikke en discipel med det navn ... Har du prøvet med stort startbogstav?"
                 profilePic.isHidden = true
                 backGroundStory.isHidden = true
