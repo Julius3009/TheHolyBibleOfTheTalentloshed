@@ -70,25 +70,25 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     func locateDisciple() {
-        if exploreTextField.text == "Holger" || exploreTextField.text == "Lille dreng" {
+        if exploreTextField.text == "Holger" || exploreTextField.text == "Lille dreng" || exploreTextField.text == "holger" {
             profilePic.isHidden = false
                 backGroundStory.isHidden = false
                     profilePic.image = #imageLiteral(resourceName: "Holger")
                 backGroundStory.text = holgersStory
             startupTextView.isHidden = true
-        } else if exploreTextField.text == "Larry" || exploreTextField.text == "Boi" {
+        } else if exploreTextField.text == "Larry" || exploreTextField.text == "Boi" || exploreTextField.text == "larry"{
                 profilePic.isHidden = false
                     backGroundStory.isHidden = false
                     profilePic.image = #imageLiteral(resourceName: "Larry")
                 backGroundStory.text = larrysStory
             startupTextView.isHidden = true
-        } else if exploreTextField.text == "Malthe" || exploreTextField.text == "Got-movez" {
+        } else if exploreTextField.text == "Malthe" || exploreTextField.text == "Got-movez" || exploreTextField.text == "malthe" {
                 profilePic.isHidden = false
                     backGroundStory.isHidden = false
                     profilePic.image = #imageLiteral(resourceName: "Malthe")
                 backGroundStory.text = malthesStory
             startupTextView.isHidden = true
-        } else if exploreTextField.text == "Laurits" || exploreTextField.text == "Fireball" {
+        } else if exploreTextField.text == "Laurits" || exploreTextField.text == "Fireball" || exploreTextField.text == "laurits" {
                 profilePic.isHidden = false
                     backGroundStory.isHidden = false
                     profilePic.image = #imageLiteral(resourceName: "Laurits")
