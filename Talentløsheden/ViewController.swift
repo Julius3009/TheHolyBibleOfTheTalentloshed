@@ -47,7 +47,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
 
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +58,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         startupTextView.text = trosbekendelsen
         startupTextView.isEditable = false
     }
-    
     
     
 
