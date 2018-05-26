@@ -23,8 +23,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     var lauritsStory : String = "Talentløs Fireball, havde en fejl da han blev født. Der var sket en fejl i hans talentløse gener. Den talentløse gud prøvede at fikse denne fejl ved at ændre på generne, men det gik helt galt. Hans gener blev fuldstændig maltrakteret, og det endte ud i en permanent ulykke. Der gik ild i hans hår, og alle prøvede at slukke ilden, men de indså hurtigt at det var permanent. Han havde også et andet talentløst talent, han var nemlig også en tøffelhelt. Talentløs fireball er udstyret med en sublim smag for sokker, de kommer i alle power rangernes farver. Ikke kun det at de står for en fjerdedel af Fireballs identitet, så er sokkerne Fireballs mest trofaste våben i krigen mod Talentløs Boi og tal og talentløs lille dreng (ikke mindst lille drengs kugler). Med sokker og tøfler på er Fireball ustoppelig, og mange bøjer sig i støvet for hans krigeriske storhed"
     
-  
-
     
     
     
