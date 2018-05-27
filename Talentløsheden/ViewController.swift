@@ -97,6 +97,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 backGroundStory.text = villadsStory
             startupTextView.isHidden = true
         }
+        else if exploreTextField.text == "Sebastian" || exploreTextField.text == "Jeiner" || exploreTextField.text == "sebastian" {
+            profilePic.isHidden = false
+            backGroundStory.isHidden = false
+            profilePic.image = #imageLiteral(resourceName: "Sebastian")
+            backGroundStory.text = sebastiansStory
+            startupTextView.isHidden = true
+        }
             else {
             startupTextView.text = "Der er ikke en discipel med det navn ... Har du prøvet med stort startbogstav?"
                 profilePic.isHidden = true
