@@ -24,7 +24,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     // Kun for trosbekendelsen
     @IBOutlet weak var startupTextView: UITextView!
     
-    // Overskriften
+    // Overskriften den skal laves om, til den nye overskrift som er en knab
     @IBOutlet weak var bibelLabel: UILabel!
     
     // profilBillede
