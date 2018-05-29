@@ -18,5 +18,6 @@ var malthesStory : String = "Den talentløse gud havde skabt en masse gode kreat
     
 var villadsStory : String = "Allerede i starten af de talentløses sæson, fik djævelen en af de talentløse på krogen. Djævelen som også er kendt som: Fisken, havde disciplen på krogen i omtrent en måned og der skete ting som er langt over manges grænser. Djævelen fik fat om talentløs forræder lige inden han fik åbenbaringen. Den talentløse skred fra djævelen, og de andre talentløse tog ham tilbage i gruppen. Det var der han fik sit navn: Talentløs forræder. "
 
+var sebastiansStory : String = "Prøv at visualisere det her: Du er fanget i stormen i fortnite og Talentløs jeiner siger at han har en launchpad, du bygger dig hurtigt op for at komme ud af stormen. Når du har bygget et stykke tid kan du lige pludselig ikke mere, men ikke fordi du har ramt grænsen, det er fordi han har skudt den ned, som den jeiner han er. Han er den største cunt af alle de talentløse, og han er nok også den mest ubeslutsomme. Han ditcher en model for at bolle kraner, fortryder det, og alligevel gør han det igen, som den jeiner han er. Citat fra Talentløs jeiner i bussen - “jeg er ikke en fuckboy, jeg er bare glad for piger”. "
 
 

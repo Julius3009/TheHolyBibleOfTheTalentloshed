@@ -64,6 +64,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func submit(_ sender: Any) {
         locateDisciple()
     
+        
     }
     
     override func viewDidLoad() {
@@ -130,6 +131,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 backGroundStory.isHidden = false
                     profilePic.image = #imageLiteral(resourceName: "Villads")
                 backGroundStory.text = villadsStory
+            startupTextView.isHidden = true
+        }
+        else if exploreTextField.text == "Sebastian" || exploreTextField.text == "Jeiner" || exploreTextField.text == "sebastian" {
+            profilePic.isHidden = false
+            backGroundStory.isHidden = false
+            profilePic.image = #imageLiteral(resourceName: "Sebastian")
+            backGroundStory.text = sebastiansStory
             startupTextView.isHidden = true
         }
             else {
