@@ -21,12 +21,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="michal-grosicki-235026" translatesAutoresizingMaskIntoConstraints="NO" id="MYK-1a-nZW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Den talentløse bibel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRx-Lh-cUC">
-                                <rect key="frame" x="61" y="57" width="253" height="36"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Udforsk her ..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kkj-Ut-Qgf">
                                 <rect key="frame" x="131" y="117" width="113" height="30"/>
                                 <nil key="textColor"/>
@@ -46,50 +40,105 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgb-r2-CGF">
-                                <rect key="frame" x="0.0" y="637" width="30" height="30"/>
-                                <connections>
-                                    <action selector="hiddenReturn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p2M-DU-MQ3"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Kgo-Q2-fAp">
-                                <rect key="frame" x="47" y="164" width="280" height="483"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tb2-qM-uZN">
+                                <rect key="frame" x="0.0" y="40" width="375" height="53"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgb-r2-CGF">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="53"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <state key="normal" title="Den Talentløse Bibel">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQc-KX-xdt"/>
+                                            <action selector="hiddenReturn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p2M-DU-MQ3"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEv-VS-Yb7">
+                                        <rect key="frame" x="0.0" y="-40" width="375" height="0.0"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Talentløsbekendelsen">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="mainMenuButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O8o-Sp-zqY"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bk2-H4-uEz">
+                                        <rect key="frame" x="0.0" y="-40" width="375" height="0.0"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Udforsk disciplene ">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="mainMenuButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mfu-15-odi"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3W-FQ-eMT">
+                                        <rect key="frame" x="0.0" y="-40" width="375" height="0.0"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Salmebogen">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="mainMenuButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oqw-Cj-PsW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="D3W-FQ-eMT" secondAttribute="trailing" id="APA-fK-TaV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bk2-H4-uEz" secondAttribute="trailing" id="IGv-yC-xTw"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tgb-r2-CGF" secondAttribute="trailing" id="LgC-LC-aW8"/>
+                                    <constraint firstAttribute="trailing" secondItem="MEv-VS-Yb7" secondAttribute="trailing" id="RPH-St-QHB"/>
+                                    <constraint firstItem="Bk2-H4-uEz" firstAttribute="leading" secondItem="Tb2-qM-uZN" secondAttribute="leading" id="VS0-5U-MYr"/>
+                                    <constraint firstItem="D3W-FQ-eMT" firstAttribute="leading" secondItem="Tb2-qM-uZN" secondAttribute="leading" id="c0H-Z3-qR6"/>
+                                    <constraint firstItem="Tgb-r2-CGF" firstAttribute="leading" secondItem="Tb2-qM-uZN" secondAttribute="leading" id="gzN-Be-jkF"/>
+                                    <constraint firstItem="MEv-VS-Yb7" firstAttribute="leading" secondItem="Tb2-qM-uZN" secondAttribute="leading" id="zfG-uS-Ilt"/>
+                                </constraints>
+                            </stackView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Kgo-Q2-fAp">
+                                <rect key="frame" x="48" y="163" width="279" height="467"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Kgo-Q2-fAp" secondAttribute="bottom" constant="20" symbolic="YES" id="3vE-TB-bJl"/>
-                            <constraint firstItem="Kgo-Q2-fAp" firstAttribute="centerX" secondItem="WsV-bh-g2p" secondAttribute="centerX" id="BdV-48-593"/>
-                            <constraint firstItem="kkj-Ut-Qgf" firstAttribute="top" secondItem="pRx-Lh-cUC" secondAttribute="bottom" constant="24" id="DqZ-db-SVI"/>
-                            <constraint firstItem="Tgb-r2-CGF" firstAttribute="leading" secondItem="MYK-1a-nZW" secondAttribute="leading" id="IVM-N6-8Xc"/>
-                            <constraint firstItem="Kgo-Q2-fAp" firstAttribute="top" secondItem="kkj-Ut-Qgf" secondAttribute="bottom" constant="17" id="JA6-5T-qcz"/>
+                            <constraint firstItem="Kgo-Q2-fAp" firstAttribute="top" secondItem="kkj-Ut-Qgf" secondAttribute="bottom" constant="16" id="479-3T-Sth"/>
+                            <constraint firstItem="kkj-Ut-Qgf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="97" id="9gJ-yY-5tg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WsV-bh-g2p" secondAttribute="bottom" constant="65" id="JPM-JJ-aGF"/>
+                            <constraint firstItem="Tb2-qM-uZN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Kld-Oe-NY8"/>
                             <constraint firstItem="MYK-1a-nZW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Lho-J2-pVV"/>
                             <constraint firstItem="Js7-o6-rC8" firstAttribute="top" secondItem="kkj-Ut-Qgf" secondAttribute="bottom" constant="30" id="Tp8-AD-eyd"/>
+                            <constraint firstItem="Kgo-Q2-fAp" firstAttribute="centerX" secondItem="WsV-bh-g2p" secondAttribute="centerX" id="U1u-gF-inD"/>
+                            <constraint firstItem="Kgo-Q2-fAp" firstAttribute="centerX" secondItem="Tb2-qM-uZN" secondAttribute="centerX" id="X98-GD-cfv"/>
                             <constraint firstItem="MYK-1a-nZW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YPE-Fa-5EF"/>
-                            <constraint firstItem="pRx-Lh-cUC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="Z5C-KI-0fX"/>
-                            <constraint firstItem="pRx-Lh-cUC" firstAttribute="centerX" secondItem="kkj-Ut-Qgf" secondAttribute="centerX" id="Z5I-kY-j6A"/>
                             <constraint firstItem="Js7-o6-rC8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="cpi-6n-6kG"/>
+                            <constraint firstItem="Kgo-Q2-fAp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="cxI-iO-7BQ"/>
                             <constraint firstItem="WsV-bh-g2p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="eOL-CA-s9A"/>
-                            <constraint firstItem="Tgb-r2-CGF" firstAttribute="bottom" secondItem="MYK-1a-nZW" secondAttribute="bottom" id="gnN-UJ-sjR"/>
                             <constraint firstItem="WsV-bh-g2p" firstAttribute="top" secondItem="Js7-o6-rC8" secondAttribute="bottom" constant="19" id="hev-Iq-EqX"/>
+                            <constraint firstItem="Tb2-qM-uZN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hvS-aq-m8z"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Js7-o6-rC8" secondAttribute="trailing" constant="98" id="hwu-BR-mky"/>
                             <constraint firstItem="MYK-1a-nZW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="k6M-rH-Adv"/>
-                            <constraint firstItem="Kgo-Q2-fAp" firstAttribute="centerX" secondItem="MYK-1a-nZW" secondAttribute="centerX" id="rTq-pS-kXX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kgo-Q2-fAp" secondAttribute="bottom" constant="37" id="ljD-SF-1Xd"/>
                             <constraint firstItem="MYK-1a-nZW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sKQ-vj-p0T"/>
                             <constraint firstItem="kkj-Ut-Qgf" firstAttribute="centerX" secondItem="WsV-bh-g2p" secondAttribute="centerX" id="uuF-LO-ovM"/>
-                            <constraint firstItem="Kgo-Q2-fAp" firstAttribute="leading" secondItem="Tgb-r2-CGF" secondAttribute="trailing" constant="17" id="vTA-fL-aFe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tb2-qM-uZN" secondAttribute="trailing" id="zO5-9w-HmI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="backGroundStory" destination="WsV-bh-g2p" id="4ya-EP-wSB"/>
-                        <outlet property="bibelLabel" destination="pRx-Lh-cUC" id="Q2f-Ob-PAf"/>
                         <outlet property="exploreTextField" destination="kkj-Ut-Qgf" id="P4g-9c-rqL"/>
                         <outlet property="profilePic" destination="Js7-o6-rC8" id="tBm-3i-h7k"/>
                         <outlet property="startupTextView" destination="Kgo-Q2-fAp" id="oMs-LH-1Vr"/>
+                        <outletCollection property="mainMenuButtons" destination="MEv-VS-Yb7" collectionClass="NSMutableArray" id="8eg-vo-2YX"/>
+                        <outletCollection property="mainMenuButtons" destination="Bk2-H4-uEz" collectionClass="NSMutableArray" id="j6P-Ch-NOj"/>
+                        <outletCollection property="mainMenuButtons" destination="D3W-FQ-eMT" collectionClass="NSMutableArray" id="S2C-vo-LID"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

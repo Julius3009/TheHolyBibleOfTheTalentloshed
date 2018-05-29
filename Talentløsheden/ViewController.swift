@@ -11,10 +11,12 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate {
         
     var trosbekendelsen : String = "Talentløse guder, i som skaber soundboksen! Helliget vorde jeres navn, Komme jeres riger. Ske jeres vilje, som i hallen således også til konkurrence; Giv os i dag vor daglige dose talentløshed, og forbliv talentløse, som også vi forbliver talentløse, og led os ikke hen til fisken, men fri os fra det onde. For dit er riget og magten og talentløsheden i evighed!"
-        
+    
     
     // Søgning i bibelen
+    
     @IBOutlet weak var exploreTextField: UITextField!
+    
     
     // Teksten til baggrundshistorierne
     @IBOutlet weak var backGroundStory: UITextView!
@@ -35,6 +37,26 @@ class ViewController: UIViewController, UITextFieldDelegate {
         startupTextView.isHidden = false
         startupTextView.text = trosbekendelsen
         exploreTextField.text = nil
+    
+    }
+    
+    @IBOutlet var mainMenuButtons: [UIButton]!
+    
+    @IBAction func handleSelection(_ sender: UIButton) {
+        mainMenuButtons.forEach { (button) in
+            UIView.animate(withDuration: 0.3, animations: {
+                button.isHidden = !button.isHidden
+                self.view.layoutIfNeeded()
+            })
+        
+        }
+    }
+    
+    enum mainMenuTaps: String {
+        case talentløsbekendelsen = "Talentløsbekendelsen"
+        case udforskDisciplnene = "Udforsk disciplnene"
+        case salmebogen = "Salmebogen"
+        
     }
     
     
@@ -49,14 +71,29 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.exploreTextField.delegate = self
+    self.exploreTextField.delegate = self
         profilePic.isHidden = true
         backGroundStory.isEditable = false
         backGroundStory.isHidden = true
-        startupTextView.text = trosbekendelsen
         startupTextView.isEditable = false
+        exploreTextField.isHidden = true
     }
     
+    @IBAction func mainMenuButtonTapped(_ sender: UIButton) {
+        guard let title = sender.currentTitle, let dropDownMenu = mainMenuTaps(rawValue: title) else {
+            return
+        }
+        
+        switch dropDownMenu {
+            
+        case .talentløsbekendelsen:
+            startupTextView.isHidden = false
+        case .udforskDisciplnene:
+            exploreTextField.isHidden = false
+        case .salmebogen:
+            print("hi")
+        }
+    }
     
 
     override func didReceiveMemoryWarning() {
