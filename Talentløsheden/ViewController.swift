@@ -17,7 +17,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var exploreTextField: UITextField!
     
-    
     // Teksten til baggrundshistorierne
     @IBOutlet weak var backGroundStory: UITextView!
     
@@ -35,7 +34,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         profilePic.isHidden = true
         backGroundStory.isHidden = true
         startupTextView.isHidden = false
-        startupTextView.text = trosbekendelsen
         exploreTextField.text = nil
     
     }
@@ -50,10 +48,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
             })
         
         }
+  
     }
     
     enum mainMenuTaps: String {
-        case talentløsbekendelsen = "Talentløsbekendelsen"
+        case historier = "Historier"
         case udforskDisciplnene = "Udforsk disciplnene"
         case salmebogen = "Salmebogen"
         
@@ -76,22 +75,32 @@ class ViewController: UIViewController, UITextFieldDelegate {
         backGroundStory.isHidden = true
         startupTextView.isEditable = false
         exploreTextField.isHidden = true
+        startupTextView.isHidden = false
+        startupTextView.text = trosbekendelsen
     }
     
     @IBAction func mainMenuButtonTapped(_ sender: UIButton) {
+        
         guard let title = sender.currentTitle, let dropDownMenu = mainMenuTaps(rawValue: title) else {
             return
         }
         
+        
+        
+        
         switch dropDownMenu {
             
-        case .talentløsbekendelsen:
-            startupTextView.isHidden = false
+        case .historier:
+            startupTextView.isHidden = true
+            print("Hi")
         case .udforskDisciplnene:
             exploreTextField.isHidden = false
         case .salmebogen:
             print("hi")
         }
+        
+        
+        
     }
     
 
